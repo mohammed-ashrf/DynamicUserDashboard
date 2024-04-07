@@ -1,0 +1,71 @@
+.toolbar {
+    padding: 0;
+    background-color: #2196f3;
+}
+.inside-toolbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;  
+}
+.inside-toolbar h1{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.input {
+    position: relative;
+}
+#input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 20px;
+    height: 36px;
+    width: 200px;
+    outline: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text-color);
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--text-color);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--text-color);
+}
+
+
+ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+  
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+  
+li:hover {
+    background-color: #eee;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+<mat-toolbar class="toolbar" fxLayout="row">
+  <div class="inside-toolbar">
+    <h1 routerLink='/home' >User Dashboard</h1>
+    <div fxFlex fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="10px"> 
+            <div class="input">
+                <input matInput id="input" type="text" placeholder="Search By ID" [(ngModel)]="searchQuery" (keyup)="onSearch()" (keyup.enter)="onSearch()">
+                <ul *ngIf="isSearched && searchQuery !== ''">
+                    <li *ngFor="let user of searchResult" (click)="onSelect(user)">
+                      {{ user.first_name }} {{user.last_name}}
+                    </li>
+                </ul>
+            </div>
+    </div>
+  </div>
+  
+</mat-toolbar>

@@ -1,0 +1,15 @@
+<div class="user-list-container" [@listAnimation]>
+    <div appHighlight class="user-card" *ngFor="let user of users">
+      <a [routerLink]="['/user', user.id]">
+        <img mat-card-avatar class="avatar" [src]="user.avatar" alt="Avatar">
+        <p>{{ user.first_name }} {{ user.last_name }}</p>
+      </a>
+    </div>
+</div>
+  
+<div class="pagination">
+    <button mat-button (click)="prevPage()" [disabled]="pageNumber === 1">Previous</button>
+    <span>Page {{ pageNumber }}</span>
+    <button mat-button (click)="nextPage()" [disabled]="pageNumber === pages">Next</button>
+</div>
+  

@@ -1,0 +1,9 @@
+<div class="user-details-container">
+    <button class="back-button" (click)="goBack()">Back</button>
+    <div *ngIf="user" class="user-info" [@fadeInOut]>
+      <img class="avatar" [src]="user.avatar" alt="Avatar">
+      <p><strong>Name:</strong> {{ user.first_name }} {{ user.last_name }}</p>
+    </div>
+    <div *ngIf="loading" class="loading-message">Loading...</div>
+</div>
+  

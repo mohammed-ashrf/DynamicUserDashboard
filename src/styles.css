@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:root {
+    --background-color : hsl(0, 0%, 98%);
+    --background-color-two : #fff;
+    --element-color : hsl(0, 0%, 100%);
+    --text-color : hsl(200, 15%, 8%);
+    --input-color : hsl(0, 0%, 52%);
+    --shadow : 4px 4px 4px #aaa;
+    --display-one : flex;
+    --display-two : none;
+}
+.dark-Theme {
+    --background-color : hsl(207, 26%, 17%);
+    --background-color-two : hsl(207, 26%, 17%);
+    --element-color : hsl(209, 23%, 22%);
+    --text-color : hsl(0, 0%, 100%);
+    --input-color : hsl(209, 23%, 22%);
+    --shadow : none;
+    --display-one : none;
+    --display-two : flex;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Svg {
+    cursor: pointer;
+    fill: var(--text-color);
+}
