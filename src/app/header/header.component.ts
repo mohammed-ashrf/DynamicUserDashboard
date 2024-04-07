@@ -15,6 +15,7 @@ export class HeaderComponent {
     private userService: UserService) { }
 
   onSearch(): void {
+    this.searchResult = [];
     if (this.searchQuery.trim() !== '') {
       this.userService.getUserById(Number(this.searchQuery.trim())).subscribe(
         (user) => {
